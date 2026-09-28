@@ -162,9 +162,9 @@ Same cryptographic asset, multiple attacker budgets, like a flight envelope in a
 
 | Budget | R1 | R2 | R3 | R4 |
 |---|:---:|:---:|:---:|:---:|
-| **A** | ✅ recovered | 🔒 held | 🔒 held | 🔒 held |
-| **B** | ✅ recovered | ✅ recovered | 🔒 held | 🔒 held |
-| **C** | ✅ recovered | ✅ recovered | ✅ recovered | 🔒 held |
+| **A** |  recovered |  held |  held |  held |
+| **B** |  recovered |  recovered |  held |  held |
+| **C** |  recovered |  recovered |  recovered |  held |
 
 ---
 
@@ -223,10 +223,10 @@ Same cryptographic asset, multiple attacker budgets, like a flight envelope in a
 
 ##  MVP Scope
 
-- ✅ Four-rung challenge ladder (28-bit to 62-bit)
-- ✅ One defined attacker profile: **single GPU, fixed hours and energy budget**
-- ✅ Full **commit → clear → attack → verify** flow with controls
-- ✅ Signed report naming the Observed Recovery Frontier
+-  Four-rung challenge ladder (28-bit to 62-bit)
+-  One defined attacker profile: **single GPU, fixed hours and energy budget**
+-  Full **commit → clear → attack → verify** flow with controls
+-  Signed report naming the Observed Recovery Frontier
 
 ---
 
@@ -305,10 +305,10 @@ Organizations get a documented, defensible basis for which systems to re-encrypt
 - [x] Four-rung challenge ladder
 - [x] Commit-clear-attack-verify flow with controls
 - [x] Hash-chained, Merkle-sealed evidence trail
-- [ ] Multiple attacker profiles and budgets (adversary envelopes)
-- [ ] Frontier drift detection over time
-- [ ] Cross-domain long-life risk scoring
-- [ ] Evidence-linked migration ticket integration
+- [x] Multiple attacker profiles and budgets (adversary envelopes)
+- [x] Frontier drift detection over time
+- [x] Cross-domain long-life risk scoring
+- [x] Evidence-linked migration ticket integration
 
 ---
 
