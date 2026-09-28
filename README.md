@@ -52,7 +52,6 @@
 - [What Makes It Different](#-what-makes-it-different)
 - [Architecture & Tech Stack](#-architecture--tech-stack)
 - [MVP Scope](#-mvp-scope)
-- [Getting Started](#-getting-started)
 - [Demo Walkthrough](#-demo-walkthrough)
 - [Success Metrics](#-success-metrics)
 - [Impact](#-impact)
@@ -230,32 +229,6 @@ Same cryptographic asset, multiple attacker budgets, like a flight envelope in a
 
 ---
 
-##  Getting Started
-
->  Replace the placeholders below with your actual repo details.
-
-```bash
-# 1. Clone the repository
-git clone <your-repo-url>
-cd <your-repo-folder>
-
-# 2. Create a virtual environment
-python -m venv venv
-source venv/bin/activate      # Windows: venv\Scripts\activate
-
-# 3. Install dependencies
-pip install -r requirements.txt
-
-# 4. Run the pipeline
-python <your_entry_script>.py
-```
-
-**Requirements**
-
-- Python 3.x
-- A CUDA-capable GPU for the recovery workers *(optional for the web demo)*
-
----
 
 ##  Demo Walkthrough
 
