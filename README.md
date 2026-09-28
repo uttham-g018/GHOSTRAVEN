@@ -1,4 +1,4 @@
-#GHOSTRAVEN
+##GHOSTRAVEN
 
 **A tamper-evident lab that measures how far a defined attacker can recover a secret.**
 
