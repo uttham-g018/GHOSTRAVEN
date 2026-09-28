@@ -1,88 +1,171 @@
-##GHOSTRAVEN
+#  GHOSTRAVEN
 
-**A tamper-evident lab that measures how far a defined attacker can recover a secret.**
+### A Tamper-Evident Lab That Measures How Far a Defined Attacker Can Recover a Secret
 
-Built by **Team KARMIN** for **Async 2026** · Track: **Cybersecurity & Defense**
-
-**Live demo:** https://charming-gaufre-637b90.netlify.app
+**Team KARMIN | Cybersecurity & Defense | ASYNC 2026**
 
 ---
 
-## The Problem
+##   Overview
 
-In *Harvest Now, Decrypt Later* attacks, adversaries steal encrypted data today and wait for cheaper compute, a leaked key, or a quantum breakthrough to unlock it. Nobody has a controlled way to measure how close that "later" already is.
+**GHOSTRAVEN** is a controlled cybersecurity laboratory that measures attacker recovery capability instead of simply assuming that a cryptographic system is secure.
 
-Vague claims like "quantum is 10–20 years away" give organizations no basis for deciding what to protect first. Decisions get made on belief, not evidence.
+The system creates a synthetic secret, generates a session-bound cryptographic witness, commits the evidence, clears the original secret, and then allows a strictly defined attacker to attempt recovery across increasingly difficult challenge levels.
 
-**Who is affected:** anyone holding data that must stay secret for years, including defence and aerospace, satellite links, medical records, financial agreements, government files, IP, and AI-training data.
-
-## The Solution
-
-GHOSTRAVEN is a controlled lab that **measures, not guesses**, attacker recovery capability.
-
-We plant a synthetic secret, seal a tamper-evident "witness" of it, then let a strictly defined attacker (fixed hardware, time, energy, and method) try to recover it across a ladder of increasingly hard challenges.
-
-**Output:** a signed **Observed Recovery Frontier**, the highest challenge rung a specific attacker profile could break, used to prioritize what to re-encrypt first.
-
-## How It Works
-
-1. Plant secret
-2. Derive session-bound witness (HKDF-SHA-256)
-3. Seal commitment
-4. Clear the secret
-5. Run the controlled attack
-6. Verify against the witness
-7. Check controls (positive, negative, leakage canary)
-8. Sign the report
-
-**Witness escrow / split control:** generation, sealing, attacking, and verifying are handled by separate parties.
-
-## Key Features
-
-- **Challenge ladder:** four rungs (R1–R4), from 28-bit to 62-bit
-- **Session-bound witnesses** using HKDF-SHA-256
-- **Commit-then-clear** evidence flow
-- **Positive, negative, and leakage-canary controls**
-- **Hash-chained, Merkle-sealed audit trail**
-- **Adversary envelope testing:** same asset, multiple attacker budgets, like a flight envelope in aerospace
-- **Frontier drift detection:** rerun the same benchmark over time to see whether recovery gets easier as tools improve
-- **Cross-domain long-life risk mode:** risk scored by secrecy duration, not just current attack cost
-- **Evidence-linked migration tickets:** one per task, with a proof bundle attached
-
-## What Makes It Different
-
-We don't claim to break AES-256 or predict quantum computers. We build the missing tool. Every recovery claim is cryptographically verifiable, not just asserted, so a result reads as:
-
-> "Under this attacker, this budget, this challenge family, recovery stopped here."
-
-## Tech Stack
-
-| Component | Technology |
-|---|---|
-| Challenge generator | Python |
-| Witness derivation | HKDF-SHA-256 |
-| Recovery workers | GPU |
-| Evidence logger | Hash chain + Merkle tree |
-
-## MVP Scope
-
-- Four-rung challenge ladder (28-bit to 62-bit)
-- One defined attacker profile (single GPU, fixed hours and energy budget)
-- Full commit → clear → attack → verify flow with controls
-
-## Success Metrics
-
-- Correct frontier detection across all four ladder rungs
-- Zero false leakage-canary hits
-- Fully verifiable hash-chained audit trail
-
-**Demo outcome:** a live run that closes with a signed statement such as *"Attacker Profile A recovered up to R2, not R3, within Budget Y."*
-
-## Team KARMIN
-
-- **Team lead:** Abhinava N.
-- **Members (USN):** 1MS25IM003, 1MS25AS002, 1MS25IS106, 1MS25IS133
+The final output is an **Observed Recovery Frontier** — the highest challenge level successfully recovered by a specific attacker under a defined computational budget.
 
 ---
 
-*Built for Async 2026, Cybersecurity & Defense track.*
+##  Problem
+
+In a **Harvest Now, Decrypt Later** scenario, an attacker can:
+
+```text
+Encrypted Data
+      ↓
+Ciphertext Stolen Today
+      ↓
+Wait for Better Capabilities
+      ↓
+Attempt Decryption Later
+```
+
+Organizations therefore need a practical way to understand how close a defined attacker is to successful recovery.
+
+This matters for long-life sensitive information including aerospace, satellite, medical, financial, government, legal and intellectual-property data.
+
+---
+
+##  Our Solution
+
+GHOSTRAVEN replaces assumptions with a controlled experiment:
+
+```text
+Plant Secret
+     ↓
+Derive Witness
+     ↓
+Seal Commitment
+     ↓
+Clear Secret
+     ↓
+Run Attack
+     ↓
+Verify Recovery
+     ↓
+Check Controls
+     ↓
+Sign Report
+```
+
+The attacker is constrained by a defined:
+
+* Hardware configuration
+* Time budget
+* Energy budget
+* Attack method
+* Challenge family
+
+This makes the result reproducible and auditable.
+
+---
+
+##  Architecture
+
+![GHOSTRAVEN Architecture](docs/images/architecture.png)
+
+### Main Components
+
+| Component           | Technology               |
+| ------------------- | ------------------------ |
+| Challenge Generator | Python                   |
+| Witness Derivation  | HKDF-SHA-256             |
+| Recovery Workers    | GPU                      |
+| Verification        | Cryptographic witness    |
+| Evidence            | Hash Chain + Merkle Tree |
+| Final Output        | Signed Recovery Report   |
+
+The MVP uses a four-rung challenge ladder from **28-bit to 62-bit**, one defined attacker profile, and the complete commit → clear → attack → verify pipeline.
+
+---
+
+##  Challenge Ladder
+
+![Challenge Ladder](docs/images/challenge-ladder.png)
+
+```text
+R1 ── 28-bit       → Easy
+ ↓
+R2                 → Medium
+ ↓
+R3                 → Hard
+ ↓
+R4 ── 62-bit       → Hardest
+```
+
+The experiment determines where the attacker stops.
+
+Example:
+
+```text
+R1 →  Recovered
+R2 →  Recovered
+R3 →  Not recovered
+R4 →  Not recovered
+
+Observed Recovery Frontier = R2
+```
+
+---
+
+##  Evidence & Verification
+
+GHOSTRAVEN uses a **session-bound HKDF-SHA-256 witness** and a commit-then-clear workflow.
+
+The system also uses:
+
+* Positive controls
+* Negative controls
+* Leakage canaries
+* Hash-chained evidence
+* Merkle-sealed evidence
+
+These mechanisms ensure that a recovery claim is **verified rather than simply asserted**.
+
+---
+
+##  Observed Recovery Frontier
+
+The main result of an experiment is a signed statement such as:
+
+> **Attacker Profile A recovered up to R2, not R3, within Budget Y.**
+
+The result can then be connected to an evidence bundle and used to prioritize systems for re-encryption.
+
+![Recovery Frontier](docs/images/recovery-frontier.png)
+
+---
+
+
+##  Future Scope
+
+* Multiple attacker profiles
+* Distributed recovery workers
+* Historical frontier tracking
+* Frontier drift detection
+* Automated migration tickets
+* Evidence-linked re-encryption workflows
+
+The project proposes rerunning standardized benchmarks over time to observe whether recovery becomes easier as tools and capabilities improve.
+
+---
+
+##  Team KARMIN
+
+**Track:** Cybersecurity & Defense
+**Event:** ASYNC 2026
+
+**Team Lead:** Abhinava N.
+
+---
+
