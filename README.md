@@ -155,7 +155,7 @@ Four rungs of increasing difficulty, from **28-bit** to **62-bit**. The attacker
 
 The highest rung the attacker recovers is the **Observed Recovery Frontier**.
 
-### 🛩️ Adversary Envelope Testing *(illustrative)*
+###  Adversary Envelope Testing *(illustrative)*
 
 Same cryptographic asset, multiple attacker budgets, like a flight envelope in aerospace.
 
@@ -291,8 +291,8 @@ Organizations get a documented, defensible basis for which systems to re-encrypt
 
 | Role | Name / USN |
 |---|---|
-| Team lead | Abhinava N. |
-| Members | 1MS25IM003 · 1MS25AS002 · 1MS25IS106 · 1MS25IS133 |
+| Team lead | Abhinava N. (1MS25IM003) |
+| Members |·Achal (1MS25AS002) ·Sannidhi R Devadiga (1MS25IS106) ·Uttham G (1MS25IS133) |
 
 ---
 
