@@ -292,9 +292,7 @@ Organizations get a documented, defensible basis for which systems to re-encrypt
 | Role | Name / USN |
 |---|---|
 | Team lead | Abhinava N. (1MS25IM003) |
-| Members |· Achal (1MS25AS002) 
-           · Sannidhi R Devadiga (1MS25IS106) 
-           · Uttham G (1MS25IS133) |
+| Members |· Achal (1MS25AS002) · Sannidhi R Devadiga (1MS25IS106) · Uttham G (1MS25IS133) |
 
 ---
 
