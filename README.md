@@ -40,8 +40,7 @@
 6. [Governance & License](#6-governance--license)
 7. [What Makes This Different](#what-makes-this-different)
 8. [Evidence Base & Research Grounding](#evidence-base--research-grounding)
-9. [Anticipated Questions (For Judges)](#anticipated-questions-for-judges)
-10. [Team](#team)
+9. [Team](#team)
 
 ---
 
@@ -483,39 +482,6 @@ The recovery-frontier methodology — positive/negative controls, leakage canari
 - Certificate Transparency (RFC 9162) and Sigstore/Rekor, as precedent for tamper-evident, publicly verifiable logs
 - TU Darmstadt's lattice-reduction challenge benchmarks, as a model for reduced-parameter difficulty ladders
 - Classical honeytoken/honeypot literature, underlying the decoy-archive design
-
----
-
-## Anticipated Questions (For Judges)
-
-Since the team is not presenting live, this section anticipates the questions a technical judge is most likely to ask.
-
-**Q: Does GHOSTRAVEN actually break real encryption like AES-256 or RSA?**
-No. Every recovery attempt runs against synthetic, lab-generated secrets at reduced difficulty (the 28-to-62-bit challenge ladder). GHOSTRAVEN never attacks real production algorithms, keys, or data.
-
-**Q: If the secret is destroyed before the attack, how do you know whether the attacker actually succeeded?**
-Through the witness mechanism — see the locksmith analogy above. The secret is used once to derive a one-way witness (via HKDF-SHA-256), then destroyed. The attacker's guess is checked against the witness, not against the original secret. A correct guess makes the witness "unlock"; an incorrect one doesn't. This also guarantees fairness: since the original secret no longer exists anywhere, the attacker cannot cheat by reading memory or stealing an answer file.
-
-**Q: Isn't a 28–62 bit challenge trivially different from real-world 128/256-bit security?**
-Yes, deliberately so. The ladder exists to produce a reproducible frontier within a practical time/compute budget for a hackathon-scale demo, not to claim anything about AES-256 or RSA-2048 directly. The architecture (witness derivation, commit-then-clear, controls, signed evidence) is designed to scale to realistic parameter sizes in a production deployment; the demo ladder is sized for observability within limited time and hardware.
-
-**Q: What stops someone from faking a result or editing a report after the fact?**
-Every run is hash-chained, sealed into a Merkle tree, and digitally signed. Any post-hoc edit to a report breaks the hash chain or invalidates the signature, which `ghostraven evidence verify` would catch immediately.
-
-**Q: Why include an AI analyst if it isn't trusted for the final verdict?**
-Because reading raw cryptographic evidence is slow for humans. The AI analyst explains anomalies and recommends next steps in plain language, but the actual validity label (`Verified / Inconclusive / Contaminated / Invalid`) is always decided by deterministic cryptographic checks — the AI has no authority over that outcome.
-
-**Q: How is this different from a PQC-readiness scanner that's already on the market?**
-A scanner flags "this algorithm is outdated" as a static fact. GHOSTRAVEN adds the missing dimension — urgency — by combining the Crypto Asset Passport (secrecy lifetime, criticality, dependency blast radius) with a measured recovery frontier, then produces signed evidence and an accountable migration ticket, not just a spreadsheet of findings. See [What Makes This Different](#what-makes-this-different) for a direct comparison.
-
-**Q: What happens to a legacy system that genuinely can't be migrated to PQC right now?**
-It's wrapped in a Cryptographic Exoskeleton: a gateway that restricts it to approved routes, blocks direct exposure, detects bypass/downgrade attempts, and opens hybrid/PQC tunnels for external traffic. This isn't presented as a permanent fix — the Residual-Risk Ledger tracks what risk remains, and the migration ticket carries a hard deadline and retirement clock.
-
-**Q: Is any of this based on real research, or is it invented for the hackathon?**
-It's grounded in published work on crypto-migration processes, PQC gateway deployments at scale, and multi-factor readiness scoring (see Evidence Base & Research Grounding). We've been explicit about which parts of GHOSTRAVEN — specifically the recovery-frontier-with-controls methodology and the honeytoken/Merkle evidence design — are our own novel contribution rather than directly validated by a cited source.
-
-**Q: What's the current state of the project — is this fully built or a prototype?**
-Alpha. The synthetic recovery lab, evidence chain, and passport scoring are implemented; the dashboard and Exoskeleton gateway are in active development. See Maturity & Benchmarks for current status.
 
 ---
 
