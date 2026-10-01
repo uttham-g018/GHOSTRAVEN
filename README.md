@@ -520,8 +520,8 @@ Alpha. The synthetic recovery lab, evidence chain, and passport scoring are impl
 |---|---|---|
 | Team Lead | Abhinava N. | 1MS25IM003 |
 | Member | Achal S | 1MS25AS002 |
-| Member | Sannidhi R Devadiga | 1MS25IS106 |
 | Member | Uttham G | 1MS25IS133 |
+| Member | Sannidhi R Devadiga | 1MS25IS106 |
 
 ---
 
