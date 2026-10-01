@@ -500,6 +500,12 @@ The recovery-frontier methodology — positive/negative controls, leakage canari
 
 <div align="center">
 
+
+---
+
+> **Note:** When opening the live demo, some 3D models/visuals may take a moment to load depending on your connection. If a model doesn't appear, click **Retry** (or refresh the page) to load it.
+
+
 ### GHOSTRAVEN
 
 **Evidence-guided prioritization for post-quantum migration.**
