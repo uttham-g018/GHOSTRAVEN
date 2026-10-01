@@ -226,7 +226,7 @@ The highest rung recovered, under full controls, is the signed **Observed Recove
 
 **Core stack:** Python · HKDF-SHA-256 · Hash-chain + Merkle-tree evidence logger · GPU recovery workers · Netlify (demo frontend)
 
-### ⚙️ Step-by-Step Installation
+###  Step-by-Step Installation
 
 ```bash
 # 1. Clone the repository
