@@ -44,6 +44,9 @@
 
 ---
 
+> **Note:** The live demo renders its 3D visuals via client-side JavaScript. On some networks or browsers, these assets may take a moment to initialize or may occasionally fail to load on first attempt. If a model does not appear, click **Retry**, or refresh the page to reload the scripts.
+---
+
 ## 1. Context & Overview
 
 ### Elevator Pitch
