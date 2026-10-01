@@ -1,6 +1,6 @@
 <div align="center">
 
-# 👻⚛️ GHOSTRAVEN
+#  GHOSTRAVEN
 
 ### Evidence-Guided Post-Quantum Migration Intelligence
 
@@ -18,7 +18,7 @@
 [![Crypto](https://img.shields.io/badge/Witness-HKDF--SHA--256-9cf?style=flat-square)](#)
 [![Evidence](https://img.shields.io/badge/Audit-Hash%20Chain%20%2B%20Merkle-purple?style=flat-square)](#)
 
-**[🚀 Live Demo](https://charming-gaufre-637b90.netlify.app) · [📐 Architecture](#2️⃣-architecture--system-design) · [⚡ Quick Start](#3️⃣-installation--configuration) · [🆚 What's Different](#-what-makes-this-different) · [🛡️ Security](#-security-reporting)**
+**[ Live Demo](https://charming-gaufre-637b90.netlify.app) · [ Architecture](#2️-architecture--system-design) · [ Quick Start](#3️-installation--configuration) · [ What's Different](#-what-makes-this-different) · [ Security](#-security-reporting)**
 
 <br/>
 
@@ -30,28 +30,28 @@
 
 ---
 
-## 📑 Table of Contents
+##  Table of Contents
 
-1. [Context & Overview](#1️⃣-context--overview)
-2. [Architecture & System Design](#2️⃣-architecture--system-design)
-3. [Installation & Configuration](#3️⃣-installation--configuration)
-4. [Developer Experience & Quality Control](#4️⃣-developer-experience--quality-control)
-5. [Reliability, Performance & Security](#5️⃣-reliability-performance--security)
-6. [Governance & License](#6️⃣-governance--license)
+1. [Context & Overview](#1️-context--overview)
+2. [Architecture & System Design](#2️-architecture--system-design)
+3. [Installation & Configuration](#3️-installation--configuration)
+4. [Developer Experience & Quality Control](#4️-developer-experience--quality-control)
+5. [Reliability, Performance & Security](#5️-reliability-performance--security)
+6. [Governance & License](#6️-governance--license)
 7. [What Makes This Different](#-what-makes-this-different)
 8. [Team](#-team)
 
 ---
 
-## 1️⃣ Context & Overview
+## 1️ Context & Overview
 
-### 🎯 Elevator Pitch
+###  Elevator Pitch
 
 **GHOSTRAVEN is an evidence-guided post-quantum security platform that identifies which systems must migrate first to quantum-safe cryptography, and backs that recommendation with signed, reproducible evidence instead of vendor claims or static scans.**
 
 It is built for long-lived, high-value systems: **aerospace, defense, satellite operations, healthcare, banking, telecom, and critical infrastructure** — anywhere data must stay confidential for years or decades.
 
-### 🧩 The Problem
+###  The Problem
 
 **Harvest Now, Decrypt Later (HNDL):** adversaries steal encrypted data today, store it, and wait — for cheaper compute, a leaked key, or a cryptographically relevant quantum computer — to decrypt it later.
 
@@ -65,27 +65,27 @@ It is built for long-lived, high-value systems: **aerospace, defense, satellite 
 
 Security teams generally accept that HNDL is real. What's missing is a defensible way to answer: *of everything an organization holds, what has to migrate first, and how is that priority order proven to an auditor, a board, or a regulator?*
 
-### ⚠️ Operating Boundary
+###  Operating Boundary
 
-> 🔒 GHOSTRAVEN never attacks real customer files, production databases, private keys, passwords, AES-256, RSA, ECC, or any PQC algorithm. Every experiment runs against synthetic, lab-generated assets that mirror the operational shape of a real system without containing any real data.
+>  GHOSTRAVEN never attacks real customer files, production databases, private keys, passwords, AES-256, RSA, ECC, or any PQC algorithm. Every experiment runs against synthetic, lab-generated assets that mirror the operational shape of a real system without containing any real data.
 
-### 🌟 Core Capabilities
+###  Core Capabilities
 
 | Capability | What it does |
 |---|---|
-| 🪪 **Crypto Asset Passport** | Per-asset profile: algorithm, protocol, data sensitivity, secrecy lifetime, criticality, owner, dependencies, exposure, upgrade difficulty, PQC readiness |
-| 📊 **Urgency Scoring Engine** | Ranks assets by quantum exposure, long-term confidentiality need, mission impact, dependency blast radius, and migration difficulty |
-| 🧪 **Synthetic Recovery Lab** | Generates harmless synthetic files, databases, telemetry, and challenge secrets that mirror real system shape with zero real data |
-| 🎯 **Observed Recovery Frontier** | Runs a fixed, disclosed attacker profile (hardware, time, memory, energy, method) against the synthetic ladder to produce a signed capability measurement |
-| ✅ **Evidence Validation** | Positive controls, negative controls, leakage canaries, config checks, and budget limits — every run labeled `Verified`, `Inconclusive`, `Contaminated`, or `Invalid` |
-| ⛓️ **Tamper-Evident Chain** | Hash chains, Merkle roots, config hashes, digital signatures, and signed receipts make hidden report modification detectable |
-| 🤖 **AI Analyst (advisory only)** | Explains anomalies, missing evidence, and migration options — deterministic cryptographic checks, not AI, decide validity |
-| 🍯 **Decoy Archives & Honeytokens** | Harmless fake assets that silently alert security when an intruder maps systems, probes synthetic archives, or attempts exfiltration |
-| 🛡️ **Cryptographic Exoskeleton** | A gateway wrapped around legacy systems that can't yet adopt PQC directly: restricts routes, blocks direct exposure, flags bypass/downgrade attempts, opens hybrid/PQC tunnels |
-| 📒 **Residual-Risk Ledger** | Tracks remaining endpoint, local-network, and gateway risk after the Exoskeleton is deployed |
-| 🎫 **Evidence-Linked Migration Tickets** | Owner, recommended action, protection status, retest schedule, full-upgrade deadline, retirement clock |
+|  **Crypto Asset Passport** | Per-asset profile: algorithm, protocol, data sensitivity, secrecy lifetime, criticality, owner, dependencies, exposure, upgrade difficulty, PQC readiness |
+|  **Urgency Scoring Engine** | Ranks assets by quantum exposure, long-term confidentiality need, mission impact, dependency blast radius, and migration difficulty |
+|  **Synthetic Recovery Lab** | Generates harmless synthetic files, databases, telemetry, and challenge secrets that mirror real system shape with zero real data |
+|  **Observed Recovery Frontier** | Runs a fixed, disclosed attacker profile (hardware, time, memory, energy, method) against the synthetic ladder to produce a signed capability measurement |
+|  **Evidence Validation** | Positive controls, negative controls, leakage canaries, config checks, and budget limits — every run labeled `Verified`, `Inconclusive`, `Contaminated`, or `Invalid` |
+|  **Tamper-Evident Chain** | Hash chains, Merkle roots, config hashes, digital signatures, and signed receipts make hidden report modification detectable |
+|  **AI Analyst (advisory only)** | Explains anomalies, missing evidence, and migration options — deterministic cryptographic checks, not AI, decide validity |
+|  **Decoy Archives & Honeytokens** | Harmless fake assets that silently alert security when an intruder maps systems, probes synthetic archives, or attempts exfiltration |
+|  **Cryptographic Exoskeleton** | A gateway wrapped around legacy systems that can't yet adopt PQC directly: restricts routes, blocks direct exposure, flags bypass/downgrade attempts, opens hybrid/PQC tunnels |
+|  **Residual-Risk Ledger** | Tracks remaining endpoint, local-network, and gateway risk after the Exoskeleton is deployed |
+|  **Evidence-Linked Migration Tickets** | Owner, recommended action, protection status, retest schedule, full-upgrade deadline, retirement clock |
 
-### 🎥 Demo
+###  Demo
 
 **Live walkthrough:** [charming-gaufre-637b90.netlify.app](https://charming-gaufre-637b90.netlify.app)
 
@@ -96,49 +96,49 @@ Security teams generally accept that HNDL is real. What's missing is a defensibl
 
 ---
 
-## 2️⃣ Architecture & System Design
+## 2️ Architecture & System Design
 
-### 🏗️ System Architecture
+###  System Architecture
 
 <div align="center">
 <img src="images/architecture.png" alt="GHOSTRAVEN system architecture" width="880"/>
 <br/><sub>GHOSTRAVEN system architecture — intake, scoring, lab, evidence, defense, and action layers</sub>
 </div>
 
-### 🔗 Component Map
+###  Component Map
 
 ```mermaid
 flowchart TB
-    subgraph Intake["📋 Asset Intake"]
+    subgraph Intake[" Asset Intake"]
         A1[Crypto Asset Passport Builder]
     end
 
-    subgraph Scoring["📊 Prioritization Engine"]
+    subgraph Scoring[" Prioritization Engine"]
         B1[Quantum Exposure Scorer]
         B2[Dependency Blast-Radius Mapper]
         B3[Migration Urgency Ranker]
     end
 
-    subgraph Lab["🧪 Synthetic Recovery Lab"]
+    subgraph Lab[" Synthetic Recovery Lab"]
         C1[Synthetic Asset Generator]
         C2[Witness Derivation - HKDF-SHA-256]
         C3[Attacker Worker - Fixed Budget]
         C4[Control Suite: Positive / Negative / Canary]
     end
 
-    subgraph Evidence["⛓️ Evidence Layer"]
+    subgraph Evidence[" Evidence Layer"]
         D1[Hash Chain + Merkle Root]
         D2[Digital Signatures]
         D3[Signed Evidence Receipt]
     end
 
-    subgraph Defense["🛡️ Active Defense"]
+    subgraph Defense[" Active Defense"]
         E1[Decoy Archives & Honeytokens]
         E2[Cryptographic Exoskeleton Gateway]
         E3[Residual-Risk Ledger]
     end
 
-    subgraph Output["🎫 Action Layer"]
+    subgraph Output[" Action Layer"]
         F1[AI Analyst - Advisory]
         F2[Evidence-Linked Migration Ticket]
     end
@@ -150,7 +150,7 @@ flowchart TB
     D3 -.explains.-> F1 -.recommends.-> F2
 ```
 
-### 🔄 End-to-End Execution Flow
+###  End-to-End Execution Flow
 
 ```mermaid
 sequenceDiagram
@@ -176,21 +176,21 @@ sequenceDiagram
     Ticket->>Owner: Owner, deadline, retest schedule, retirement clock
 ```
 
-### 🛡️ Cryptographic Exoskeleton (for legacy assets)
+###  Cryptographic Exoskeleton (for legacy assets)
 
 ```mermaid
 flowchart LR
-    Legacy[🏚️ Legacy System<br/>cannot adopt PQC yet] --> Gate{🚪 Exoskeleton Gateway}
+    Legacy[ Legacy System<br/>cannot adopt PQC yet] --> Gate{ Exoskeleton Gateway}
     Gate -->|Approved routes only| Internal[Internal Network]
     Gate -->|Hybrid/PQC tunnel| External[External Clients]
-    Gate -->|Blocks| Bypass[❌ Direct exposure / downgrade attempts]
-    Gate --> Ledger[📒 Residual-Risk Ledger]
-    Ledger --> Ticket[🎫 Migration Ticket<br/>retest + deadline + retirement clock]
+    Gate -->|Blocks| Bypass[ Direct exposure / downgrade attempts]
+    Gate --> Ledger[ Residual-Risk Ledger]
+    Ledger --> Ticket[ Migration Ticket<br/>retest + deadline + retirement clock]
 ```
 
 > A gateway placed around a legacy system that cannot yet adopt PQC: the old system is not modified, but external traffic must pass through a monitored, hybrid/PQC-protected boundary, and bypass attempts are logged.
 
-### 🪜 The Challenge Ladder (Synthetic Recovery Lab)
+###  The Challenge Ladder (Synthetic Recovery Lab)
 
 | Rung | Difficulty | What it demonstrates |
 |---|---|---|
@@ -201,7 +201,7 @@ flowchart LR
 
 The highest rung recovered, under full controls, is the signed **Observed Recovery Frontier**.
 
-### 📚 Documentation Links
+###  Documentation Links
 
 | Resource | Link |
 |---|---|
@@ -212,9 +212,9 @@ The highest rung recovered, under full controls, is the signed **Observed Recove
 
 ---
 
-## 3️⃣ Installation & Configuration
+## 3️ Installation & Configuration
 
-### ✅ Prerequisites & Tech Stack
+###  Prerequisites & Tech Stack
 
 | Requirement | Version / Spec |
 |---|---|
@@ -253,30 +253,9 @@ python run_lab.py --config config/default.yaml
 python app.py
 ```
 
-### 🔑 Environment Variables Matrix
+## 4️ Developer Experience & Quality Control
 
-| Variable | Type | Default | Required | Description |
-|---|---|---|:---:|---|
-| `GHOSTRAVEN_ENV` | `string` | `development` | ✅ | Runtime environment (`development`, `staging`, `production`) |
-| `ATTACKER_PROFILE_HARDWARE` | `string` | `single-gpu` | ✅ | Fixed hardware class for the recovery worker |
-| `ATTACKER_PROFILE_HOURS` | `int` | `24` | ✅ | Fixed time budget (hours) for a challenge run |
-| `ATTACKER_PROFILE_ENERGY_WATTHRS` | `int` | `500` | ✅ | Fixed energy budget per run |
-| `WITNESS_KDF` | `string` | `HKDF-SHA-256` | ✅ | Key derivation function for session-bound witnesses |
-| `EVIDENCE_SIGNING_KEY_PATH` | `path` | — | ✅ | Path to the private key used to sign evidence receipts |
-| `MERKLE_STORE_PATH` | `path` | `./data/ledger` | ✅ | Local path for the hash-chain + Merkle evidence store |
-| `HONEYTOKEN_ENABLED` | `bool` | `true` | ❌ | Toggles decoy archive / honeytoken deployment |
-| `EXOSKELETON_GATEWAY_URL` | `url` | — | ❌ | Endpoint for the Cryptographic Exoskeleton gateway |
-| `AI_ANALYST_API_KEY` | `secret` | — | ❌ | API key for the advisory AI analyst (explanations only, non-authoritative) |
-| `TICKET_RETEST_INTERVAL_DAYS` | `int` | `90` | ❌ | Default retest cadence written to migration tickets |
-| `LOG_LEVEL` | `string` | `info` | ❌ | Logging verbosity |
-
-> ⚠️ Replace placeholder values with your actual repo's config keys before submission.
-
----
-
-## 4️⃣ Developer Experience & Quality Control
-
-### 💻 Usage Snippets
+###  Usage Snippets
 
 **Register an asset in the Crypto Asset Passport:**
 
@@ -335,7 +314,7 @@ ghostraven passport rank --top 10
 # ...
 ```
 
-### 🧪 Testing & QA Commands
+###  Testing & QA Commands
 
 ```bash
 # Run full unit test suite
@@ -358,13 +337,13 @@ python scripts/validate_ledger.py --sample
 
 ---
 
-## 5️⃣ Reliability, Performance & Security
+## 5️ Reliability, Performance & Security
 
-### 📈 Maturity & Benchmarks
+###  Maturity & Benchmarks
 
 | Status | Meaning |
 |---|---|
-| 🟠 **Alpha** | Core lab, evidence chain, and passport scoring implemented; dashboard and Exoskeleton gateway in active development |
+|  **Alpha** | Core lab, evidence chain, and passport scoring implemented; dashboard and Exoskeleton gateway in active development |
 
 | Metric | Current (illustrative — replace with real measured numbers) |
 |---|---|
@@ -374,7 +353,7 @@ python scripts/validate_ledger.py --sample
 | Avg. witness derivation latency | `< 50 ms` |
 | Avg. challenge run (single GPU, R1–R4) | `~ <fill in> hours` |
 
-### 🩹 Troubleshooting & Known Limitations
+###  Troubleshooting & Known Limitations
 
 | Issue | Cause | Workaround / Trade-off |
 |---|---|---|
@@ -386,7 +365,7 @@ python scripts/validate_ledger.py --sample
 
 **Known limitation:** GHOSTRAVEN measures a declared laboratory attacker's recovery capability under fixed, disclosed resources. It does not measure a real-world adversary's hidden compute power. Every Observed Recovery Frontier should be treated as a calibrated proxy for prioritization, not a guarantee about any real system's unbreakability.
 
-### 🔐 Security Reporting
+###  Security Reporting
 
 - **Do not** open a public GitHub issue for a vulnerability.
 - Report privately to: `<security-contact-email>`
@@ -395,20 +374,20 @@ python scripts/validate_ledger.py --sample
 
 ---
 
-## 6️⃣ Governance & License
+## 6️ Governance & License
 
-### 📜 License
+###  License
 
 This project is released under the **`<choose a license — e.g. MIT / Apache-2.0>`** license. See [`LICENSE`](./LICENSE) for full terms.
 
-### 🤝 Contributing
+###  Contributing
 
 1. Fork the repo and create a feature branch: `git checkout -b feature/your-feature`
 2. Follow the code style: `black` + `flake8` must pass before a PR
 3. Add or update tests for any behavior change
 4. Open a PR describing the change and linking any related issue
 
-### 🎨 Code Style
+###  Code Style
 
 - **Python:** `black` formatting, `flake8` linting, type hints checked with `mypy`
 - **Commits:** Conventional Commits style preferred (`feat:`, `fix:`, `docs:`...)
@@ -416,7 +395,7 @@ This project is released under the **`<choose a license — e.g. MIT / Apache-2.
 
 ---
 
-## 🆚 What Makes This Different
+##  What Makes This Different
 
 | | Typical PQC-readiness scanner | Vendor "quantum-safe" claim | GHOSTRAVEN |
 |---|---|---|---|
@@ -432,7 +411,7 @@ This project is released under the **`<choose a license — e.g. MIT / Apache-2.
 
 ---
 
-## 👥 Team
+##  Team
 
 **Team KARMIN** · ASYNC 2026 · Cybersecurity & Defense Track
 
@@ -445,7 +424,7 @@ This project is released under the **`<choose a license — e.g. MIT / Apache-2.
 
 <div align="center">
 
-### 👻 GHOSTRAVEN
+###  GHOSTRAVEN
 
 **Evidence-guided prioritization for post-quantum migration.**
 
