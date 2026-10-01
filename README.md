@@ -18,7 +18,7 @@
 [![Crypto](https://img.shields.io/badge/Witness-HKDF--SHA--256-9cf?style=flat-square)](#)
 [![Evidence](https://img.shields.io/badge/Audit-Hash%20Chain%20%2B%20Merkle-purple?style=flat-square)](#)
 
-**[Live Demo](https://taupe-cat-0c2dbd.netlify.app/) · [Architecture](#2-architecture--system-design) · [Quick Start](#3-installation--configuration) · [What's Different](#what-makes-this-different) · [Evidence Base](#evidence-base--research-grounding) · [Judge Q&A](#anticipated-questions-for-judges)**
+**[Live Demo](https://deft-faun-d8074f.netlify.app/) · [Architecture](#2-architecture--system-design) · [Quick Start](#3-installation--configuration) · [What's Different](#what-makes-this-different) · [Evidence Base](#evidence-base--research-grounding) · [Judge Q&A](#anticipated-questions-for-judges)**
 
 <br/>
 
@@ -88,7 +88,7 @@ Security teams generally accept that HNDL is real. What's missing is a defensibl
 
 ### Demo
 
-**Live walkthrough:** [taupe-cat-0c2dbd.netlify.app](https://taupe-cat-0c2dbd.netlify.app/)
+**Live walkthrough:** [taupe-cat-0c2dbd.netlify.app](https://deft-faun-d8074f.netlify.app/)
 
 <div align="center">
 <img src="images/frontier.png" alt="GHOSTRAVEN Observed Recovery Frontier" width="880"/>
@@ -504,7 +504,7 @@ The recovery-frontier methodology — positive/negative controls, leakage canari
 
 **Evidence-guided prioritization for post-quantum migration.**
 
-[![Live Demo](https://img.shields.io/badge/Try_the_Demo-taupe--cat--0c2dbd.netlify.app-black?style=for-the-badge)](https://taupe-cat-0c2dbd.netlify.app/)
+[![Live Demo](https://img.shields.io/badge/Try_the_Demo-taupe--cat--0c2dbd.netlify.app-black?style=for-the-badge)](https://deft-faun-d8074f.netlify.app/)
 
 *Built for ASYNC 2026.*
 
