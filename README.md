@@ -1,14 +1,14 @@
 <div align="center">
 
-#  GHOSTRAVEN
+# 👻⚛️ GHOSTRAVEN
 
 ### Evidence-Guided Post-Quantum Migration Intelligence
 
 **You can't protect what you haven't measured.**
 
-[![Async 2026](https://img.shields.io/badge/ASYNC-2026-black?style=for-the-badge)](https://charming-gaufre-637b90.netlify.app)
+[![Async 2026](https://img.shields.io/badge/ASYNC-2026-black?style=for-the-badge)](https://taupe-cat-0c2dbd.netlify.app/)
 [![Track](https://img.shields.io/badge/Track-Cybersecurity%20%26%20Defense-red?style=for-the-badge)](#)
-[![Status](https://img.shields.io/badge/Status-Alpha-orange?style=for-the-badge)](#-maturity--benchmarks)
+[![Status](https://img.shields.io/badge/Status-Alpha-orange?style=for-the-badge)](#5️⃣-reliability-performance--security)
 [![License](https://img.shields.io/badge/License-TBD-lightgrey?style=for-the-badge)](#6️⃣-governance--license)
 
 [![Build](https://img.shields.io/badge/build-passing-brightgreen?style=flat-square)](#)
@@ -18,7 +18,7 @@
 [![Crypto](https://img.shields.io/badge/Witness-HKDF--SHA--256-9cf?style=flat-square)](#)
 [![Evidence](https://img.shields.io/badge/Audit-Hash%20Chain%20%2B%20Merkle-purple?style=flat-square)](#)
 
-**[ Live Demo](https://charming-gaufre-637b90.netlify.app) · [ Architecture](#2️-architecture--system-design) · [ Quick Start](#3️-installation--configuration) · [ What's Different](#-what-makes-this-different) · [ Security](#-security-reporting)**
+**[🚀 Live Demo](https://taupe-cat-0c2dbd.netlify.app/) · [📐 Architecture](#2️⃣-architecture--system-design) · [⚡ Quick Start](#3️⃣-installation--configuration) · [🆚 What's Different](#-what-makes-this-different) · [📚 Evidence Base](#-evidence-base--research-grounding) · [❓ Judge Q&A](#-anticipated-questions-for-judges)**
 
 <br/>
 
@@ -30,28 +30,30 @@
 
 ---
 
-##  Table of Contents
+## 📑 Table of Contents
 
-1. [Context & Overview](#1️-context--overview)
-2. [Architecture & System Design](#2️-architecture--system-design)
-3. [Installation & Configuration](#3️-installation--configuration)
-4. [Developer Experience & Quality Control](#4️-developer-experience--quality-control)
-5. [Reliability, Performance & Security](#5️-reliability-performance--security)
-6. [Governance & License](#6️-governance--license)
+1. [Context & Overview](#1️⃣-context--overview)
+2. [Architecture & System Design](#2️⃣-architecture--system-design)
+3. [Installation & Configuration](#3️⃣-installation--configuration)
+4. [Developer Experience & Quality Control](#4️⃣-developer-experience--quality-control)
+5. [Reliability, Performance & Security](#5️⃣-reliability-performance--security)
+6. [Governance & License](#6️⃣-governance--license)
 7. [What Makes This Different](#-what-makes-this-different)
-8. [Team](#-team)
+8. [Evidence Base & Research Grounding](#-evidence-base--research-grounding)
+9. [Anticipated Questions (For Judges)](#-anticipated-questions-for-judges)
+10. [Team](#-team)
 
 ---
 
-## 1️ Context & Overview
+## 1️⃣ Context & Overview
 
-###  Elevator Pitch
+### 🎯 Elevator Pitch
 
 **GHOSTRAVEN is an evidence-guided post-quantum security platform that identifies which systems must migrate first to quantum-safe cryptography, and backs that recommendation with signed, reproducible evidence instead of vendor claims or static scans.**
 
 It is built for long-lived, high-value systems: **aerospace, defense, satellite operations, healthcare, banking, telecom, and critical infrastructure** — anywhere data must stay confidential for years or decades.
 
-###  The Problem
+### 🧩 The Problem
 
 **Harvest Now, Decrypt Later (HNDL):** adversaries steal encrypted data today, store it, and wait — for cheaper compute, a leaked key, or a cryptographically relevant quantum computer — to decrypt it later.
 
@@ -65,29 +67,29 @@ It is built for long-lived, high-value systems: **aerospace, defense, satellite 
 
 Security teams generally accept that HNDL is real. What's missing is a defensible way to answer: *of everything an organization holds, what has to migrate first, and how is that priority order proven to an auditor, a board, or a regulator?*
 
-###  Operating Boundary
+### ⚠️ Operating Boundary
 
->  GHOSTRAVEN never attacks real customer files, production databases, private keys, passwords, AES-256, RSA, ECC, or any PQC algorithm. Every experiment runs against synthetic, lab-generated assets that mirror the operational shape of a real system without containing any real data.
+> 🔒 GHOSTRAVEN never attacks real customer files, production databases, private keys, passwords, AES-256, RSA, ECC, or any PQC algorithm. Every experiment runs against synthetic, lab-generated assets that mirror the operational shape of a real system without containing any real data.
 
-###  Core Capabilities
+### 🌟 Core Capabilities
 
 | Capability | What it does |
 |---|---|
-|  **Crypto Asset Passport** | Per-asset profile: algorithm, protocol, data sensitivity, secrecy lifetime, criticality, owner, dependencies, exposure, upgrade difficulty, PQC readiness |
-|  **Urgency Scoring Engine** | Ranks assets by quantum exposure, long-term confidentiality need, mission impact, dependency blast radius, and migration difficulty |
-|  **Synthetic Recovery Lab** | Generates harmless synthetic files, databases, telemetry, and challenge secrets that mirror real system shape with zero real data |
-|  **Observed Recovery Frontier** | Runs a fixed, disclosed attacker profile (hardware, time, memory, energy, method) against the synthetic ladder to produce a signed capability measurement |
-|  **Evidence Validation** | Positive controls, negative controls, leakage canaries, config checks, and budget limits — every run labeled `Verified`, `Inconclusive`, `Contaminated`, or `Invalid` |
-|  **Tamper-Evident Chain** | Hash chains, Merkle roots, config hashes, digital signatures, and signed receipts make hidden report modification detectable |
-|  **AI Analyst (advisory only)** | Explains anomalies, missing evidence, and migration options — deterministic cryptographic checks, not AI, decide validity |
-|  **Decoy Archives & Honeytokens** | Harmless fake assets that silently alert security when an intruder maps systems, probes synthetic archives, or attempts exfiltration |
-|  **Cryptographic Exoskeleton** | A gateway wrapped around legacy systems that can't yet adopt PQC directly: restricts routes, blocks direct exposure, flags bypass/downgrade attempts, opens hybrid/PQC tunnels |
-|  **Residual-Risk Ledger** | Tracks remaining endpoint, local-network, and gateway risk after the Exoskeleton is deployed |
-|  **Evidence-Linked Migration Tickets** | Owner, recommended action, protection status, retest schedule, full-upgrade deadline, retirement clock |
+| 🪪 **Crypto Asset Passport** | Per-asset profile: algorithm, protocol, data sensitivity, secrecy lifetime, criticality, owner, dependencies, exposure, upgrade difficulty, PQC readiness |
+| 📊 **Urgency Scoring Engine** | Ranks assets by quantum exposure, long-term confidentiality need, mission impact, dependency blast radius, and migration difficulty |
+| 🧪 **Synthetic Recovery Lab** | Generates harmless synthetic files, databases, telemetry, and challenge secrets that mirror real system shape with zero real data |
+| 🎯 **Observed Recovery Frontier** | Runs a fixed, disclosed attacker profile (hardware, time, memory, energy, method) against the synthetic ladder to produce a signed capability measurement |
+| ✅ **Evidence Validation** | Positive controls, negative controls, leakage canaries, config checks, and budget limits — every run labeled `Verified`, `Inconclusive`, `Contaminated`, or `Invalid` |
+| ⛓️ **Tamper-Evident Chain** | Hash chains, Merkle roots, config hashes, digital signatures, and signed receipts make hidden report modification detectable |
+| 🤖 **AI Analyst (advisory only)** | Explains anomalies, missing evidence, and migration options — deterministic cryptographic checks, not AI, decide validity |
+| 🍯 **Decoy Archives & Honeytokens** | Harmless fake assets that silently alert security when an intruder maps systems, probes synthetic archives, or attempts exfiltration |
+| 🛡️ **Cryptographic Exoskeleton** | A gateway wrapped around legacy systems that can't yet adopt PQC directly: restricts routes, blocks direct exposure, flags bypass/downgrade attempts, opens hybrid/PQC tunnels |
+| 📒 **Residual-Risk Ledger** | Tracks remaining endpoint, local-network, and gateway risk after the Exoskeleton is deployed |
+| 🎫 **Evidence-Linked Migration Tickets** | Owner, recommended action, protection status, retest schedule, full-upgrade deadline, retirement clock |
 
-###  Demo
+### 🎥 Demo
 
-**Live walkthrough:** [charming-gaufre-637b90.netlify.app](https://charming-gaufre-637b90.netlify.app)
+**Live walkthrough:** [taupe-cat-0c2dbd.netlify.app](https://taupe-cat-0c2dbd.netlify.app/)
 
 <div align="center">
 <img src="images/frontier.png" alt="GHOSTRAVEN Observed Recovery Frontier" width="880"/>
@@ -96,49 +98,49 @@ Security teams generally accept that HNDL is real. What's missing is a defensibl
 
 ---
 
-## 2️ Architecture & System Design
+## 2️⃣ Architecture & System Design
 
-###  System Architecture
+### 🏗️ System Architecture
 
 <div align="center">
 <img src="images/architecture.png" alt="GHOSTRAVEN system architecture" width="880"/>
 <br/><sub>GHOSTRAVEN system architecture — intake, scoring, lab, evidence, defense, and action layers</sub>
 </div>
 
-###  Component Map
+### 🔗 Component Map
 
 ```mermaid
 flowchart TB
-    subgraph Intake[" Asset Intake"]
+    subgraph Intake["📋 Asset Intake"]
         A1[Crypto Asset Passport Builder]
     end
 
-    subgraph Scoring[" Prioritization Engine"]
+    subgraph Scoring["📊 Prioritization Engine"]
         B1[Quantum Exposure Scorer]
         B2[Dependency Blast-Radius Mapper]
         B3[Migration Urgency Ranker]
     end
 
-    subgraph Lab[" Synthetic Recovery Lab"]
+    subgraph Lab["🧪 Synthetic Recovery Lab"]
         C1[Synthetic Asset Generator]
         C2[Witness Derivation - HKDF-SHA-256]
         C3[Attacker Worker - Fixed Budget]
         C4[Control Suite: Positive / Negative / Canary]
     end
 
-    subgraph Evidence[" Evidence Layer"]
+    subgraph Evidence["⛓️ Evidence Layer"]
         D1[Hash Chain + Merkle Root]
         D2[Digital Signatures]
         D3[Signed Evidence Receipt]
     end
 
-    subgraph Defense[" Active Defense"]
+    subgraph Defense["🛡️ Active Defense"]
         E1[Decoy Archives & Honeytokens]
         E2[Cryptographic Exoskeleton Gateway]
         E3[Residual-Risk Ledger]
     end
 
-    subgraph Output[" Action Layer"]
+    subgraph Output["🎫 Action Layer"]
         F1[AI Analyst - Advisory]
         F2[Evidence-Linked Migration Ticket]
     end
@@ -150,7 +152,7 @@ flowchart TB
     D3 -.explains.-> F1 -.recommends.-> F2
 ```
 
-###  End-to-End Execution Flow
+### 🔄 End-to-End Execution Flow
 
 ```mermaid
 sequenceDiagram
@@ -176,21 +178,39 @@ sequenceDiagram
     Ticket->>Owner: Owner, deadline, retest schedule, retirement clock
 ```
 
-###  Cryptographic Exoskeleton (for legacy assets)
+### 🔐 Understanding the Witness: The Locksmith Analogy
+
+The hardest part of the design to explain is *how we can prove an attacker recovered a secret without ever keeping the secret around to check against.* Here's the plain-language version:
+
+> **1. Plant the secret (the key).** Imagine you have a brand-new, uniquely-cut key. This key is your secret.
+>
+> **2. Derive the witness (the padlock).** A locksmith uses your key to custom-build a solid steel padlock whose internal pins match the key's exact cuts. The padlock contains the *shape* of the key locked inside its mechanism — but it is not the key itself. You cannot turn a padlock back into a key, the same way you can't turn a shadow back into the object that cast it. This is exactly what **HKDF-SHA-256** does: it derives a one-way "witness" from the secret that can check a guess but can't reveal the original.
+>
+> **3. Seal the commitment (the glass case).** The padlock is bolted to a wall inside a sealed glass case, so nobody can tamper with the internal mechanism. This is GHOSTRAVEN's commitment-sealing step — the witness is locked in before any attack begins.
+>
+> **4. Clear the secret (destroy the key).** The original key is dropped into molten lava. It is gone forever. Now the secret exists nowhere in the world — only the padlock remains.
+>
+> **5. The attacker tries to recover it.** The attacker (locksmith's "burglar") is told: *"Recreate the key that was melted. You get a fixed time budget and fixed resources — nothing else."* They start filing blank keys and testing them against the padlock. Click — nothing. Click — nothing. Then: **CLICK** — the padlock springs open.
+>
+> **6. Verification, without ever needing the original.** The padlock opening *is* the proof. GHOSTRAVEN never needs to pull the original secret back out to check the attacker's answer — the witness itself says yes or no. Because the secret was destroyed before the attack started, the attacker cannot cheat by reading memory or stealing the answer from a file. The answer simply doesn't exist anywhere except in their own computation.
+
+This is why the **Observed Recovery Frontier** is trustworthy evidence rather than a claim: the test is provably fair, because nothing exists to leak.
+
+### 🛡️ Cryptographic Exoskeleton (for legacy assets)
 
 ```mermaid
 flowchart LR
-    Legacy[ Legacy System<br/>cannot adopt PQC yet] --> Gate{ Exoskeleton Gateway}
+    Legacy[🏚️ Legacy System<br/>cannot adopt PQC yet] --> Gate{🚪 Exoskeleton Gateway}
     Gate -->|Approved routes only| Internal[Internal Network]
     Gate -->|Hybrid/PQC tunnel| External[External Clients]
-    Gate -->|Blocks| Bypass[ Direct exposure / downgrade attempts]
-    Gate --> Ledger[ Residual-Risk Ledger]
-    Ledger --> Ticket[ Migration Ticket<br/>retest + deadline + retirement clock]
+    Gate -->|Blocks| Bypass[❌ Direct exposure / downgrade attempts]
+    Gate --> Ledger[📒 Residual-Risk Ledger]
+    Ledger --> Ticket[🎫 Migration Ticket<br/>retest + deadline + retirement clock]
 ```
 
 > A gateway placed around a legacy system that cannot yet adopt PQC: the old system is not modified, but external traffic must pass through a monitored, hybrid/PQC-protected boundary, and bypass attempts are logged.
 
-###  The Challenge Ladder (Synthetic Recovery Lab)
+### 🪜 The Challenge Ladder (Synthetic Recovery Lab)
 
 | Rung | Difficulty | What it demonstrates |
 |---|---|---|
@@ -201,20 +221,20 @@ flowchart LR
 
 The highest rung recovered, under full controls, is the signed **Observed Recovery Frontier**.
 
-###  Documentation Links
+### 📚 Documentation Links
 
 | Resource | Link |
 |---|---|
-| Live Demo | https://charming-gaufre-637b90.netlify.app |
+| Live Demo | https://taupe-cat-0c2dbd.netlify.app/ |
 | API Specification (OpenAPI/Swagger) | `<add link once published>` |
 | Setup Wiki | `<add link once published>` |
 | Design Docs | `<add link once published>` |
 
 ---
 
-## 3️ Installation & Configuration
+## 3️⃣ Installation & Configuration
 
-###  Prerequisites & Tech Stack
+### ✅ Prerequisites & Tech Stack
 
 | Requirement | Version / Spec |
 |---|---|
@@ -226,7 +246,7 @@ The highest rung recovered, under full controls, is the signed **Observed Recove
 
 **Core stack:** Python · HKDF-SHA-256 · Hash-chain + Merkle-tree evidence logger · GPU recovery workers · Netlify (demo frontend)
 
-###  Step-by-Step Installation
+### ⚙️ Step-by-Step Installation
 
 ```bash
 # 1. Clone the repository
@@ -253,9 +273,30 @@ python run_lab.py --config config/default.yaml
 python app.py
 ```
 
-## 4️ Developer Experience & Quality Control
+### 🔑 Environment Variables Matrix
 
-###  Usage Snippets
+| Variable | Type | Default | Required | Description |
+|---|---|---|:---:|---|
+| `GHOSTRAVEN_ENV` | `string` | `development` | ✅ | Runtime environment (`development`, `staging`, `production`) |
+| `ATTACKER_PROFILE_HARDWARE` | `string` | `single-gpu` | ✅ | Fixed hardware class for the recovery worker |
+| `ATTACKER_PROFILE_HOURS` | `int` | `24` | ✅ | Fixed time budget (hours) for a challenge run |
+| `ATTACKER_PROFILE_ENERGY_WATTHRS` | `int` | `500` | ✅ | Fixed energy budget per run |
+| `WITNESS_KDF` | `string` | `HKDF-SHA-256` | ✅ | Key derivation function for session-bound witnesses |
+| `EVIDENCE_SIGNING_KEY_PATH` | `path` | — | ✅ | Path to the private key used to sign evidence receipts |
+| `MERKLE_STORE_PATH` | `path` | `./data/ledger` | ✅ | Local path for the hash-chain + Merkle evidence store |
+| `HONEYTOKEN_ENABLED` | `bool` | `true` | ❌ | Toggles decoy archive / honeytoken deployment |
+| `EXOSKELETON_GATEWAY_URL` | `url` | — | ❌ | Endpoint for the Cryptographic Exoskeleton gateway |
+| `AI_ANALYST_API_KEY` | `secret` | — | ❌ | API key for the advisory AI analyst (explanations only, non-authoritative) |
+| `TICKET_RETEST_INTERVAL_DAYS` | `int` | `90` | ❌ | Default retest cadence written to migration tickets |
+| `LOG_LEVEL` | `string` | `info` | ❌ | Logging verbosity |
+
+> ⚠️ Replace placeholder values with your actual repo's config keys before submission.
+
+---
+
+## 4️⃣ Developer Experience & Quality Control
+
+### 💻 Usage Snippets
 
 **Register an asset in the Crypto Asset Passport:**
 
@@ -314,7 +355,7 @@ ghostraven passport rank --top 10
 # ...
 ```
 
-###  Testing & QA Commands
+### 🧪 Testing & QA Commands
 
 ```bash
 # Run full unit test suite
@@ -337,13 +378,13 @@ python scripts/validate_ledger.py --sample
 
 ---
 
-## 5️ Reliability, Performance & Security
+## 5️⃣ Reliability, Performance & Security
 
-###  Maturity & Benchmarks
+### 📈 Maturity & Benchmarks
 
 | Status | Meaning |
 |---|---|
-|  **Alpha** | Core lab, evidence chain, and passport scoring implemented; dashboard and Exoskeleton gateway in active development |
+| 🟠 **Alpha** | Core lab, evidence chain, and passport scoring implemented; dashboard and Exoskeleton gateway in active development |
 
 | Metric | Current (illustrative — replace with real measured numbers) |
 |---|---|
@@ -353,7 +394,7 @@ python scripts/validate_ledger.py --sample
 | Avg. witness derivation latency | `< 50 ms` |
 | Avg. challenge run (single GPU, R1–R4) | `~ <fill in> hours` |
 
-###  Troubleshooting & Known Limitations
+### 🩹 Troubleshooting & Known Limitations
 
 | Issue | Cause | Workaround / Trade-off |
 |---|---|---|
@@ -365,7 +406,7 @@ python scripts/validate_ledger.py --sample
 
 **Known limitation:** GHOSTRAVEN measures a declared laboratory attacker's recovery capability under fixed, disclosed resources. It does not measure a real-world adversary's hidden compute power. Every Observed Recovery Frontier should be treated as a calibrated proxy for prioritization, not a guarantee about any real system's unbreakability.
 
-###  Security Reporting
+### 🔐 Security Reporting
 
 - **Do not** open a public GitHub issue for a vulnerability.
 - Report privately to: `<security-contact-email>`
@@ -374,20 +415,20 @@ python scripts/validate_ledger.py --sample
 
 ---
 
-## 6️ Governance & License
+## 6️⃣ Governance & License
 
-###  License
+### 📜 License
 
 This project is released under the **`<choose a license — e.g. MIT / Apache-2.0>`** license. See [`LICENSE`](./LICENSE) for full terms.
 
-###  Contributing
+### 🤝 Contributing
 
 1. Fork the repo and create a feature branch: `git checkout -b feature/your-feature`
 2. Follow the code style: `black` + `flake8` must pass before a PR
 3. Add or update tests for any behavior change
 4. Open a PR describing the change and linking any related issue
 
-###  Code Style
+### 🎨 Code Style
 
 - **Python:** `black` formatting, `flake8` linting, type hints checked with `mypy`
 - **Commits:** Conventional Commits style preferred (`feat:`, `fix:`, `docs:`...)
@@ -395,7 +436,7 @@ This project is released under the **`<choose a license — e.g. MIT / Apache-2.
 
 ---
 
-##  What Makes This Different
+## 🆚 What Makes This Different
 
 | | Typical PQC-readiness scanner | Vendor "quantum-safe" claim | GHOSTRAVEN |
 |---|---|---|---|
@@ -411,24 +452,83 @@ This project is released under the **`<choose a license — e.g. MIT / Apache-2.
 
 ---
 
-##  Team
+## 📚 Evidence Base & Research Grounding
+
+GHOSTRAVEN's design choices are grounded in published migration, gateway, and crypto-agility research rather than invented from scratch. Each module below is matched to the strongest supporting source we verified, with honest caveats about what each source does and doesn't prove.
+
+| GHOSTRAVEN module | Supporting work | What it actually shows | Caveat |
+|---|---|---|---|
+| **Cryptographic Exoskeleton / gateway** | Wickramasinghe, Li, Jha & Shaghaghi — large-scale TLS handshake study | A scan of roughly 2 billion handshakes found hybrid key exchange (X25519+ML-KEM-768) adds only modest overhead (~1.1–1.2 KB per direction) with no meaningful latency penalty; most PQ-TLS deployments were provider-managed, not owner-managed, and legacy ciphers persisted alongside PQ support | Public HTTPS only, observed from cloud vantage points — not internal legacy networks |
+| **Exoskeleton + Passport discovery** | Balaji et al. — automated configuration profiling for hybrid PQC deployment in financial infrastructure | Found TLS termination spread across load balancers, gateways, and proxies; across 8,443 configs, zero hybrid PQ adoption and ~29% still using RSA key exchange with no forward secrecy; a bank proof-of-concept added ML-KEM at the termination layer with no application changes | Preprint, not yet peer-reviewed |
+| **Urgency Scoring Engine** | Costa — multi-factor PQC migration readiness scoring | A five-factor readiness score (inventory completeness, algorithm compliance, architectural decoupling, toolchain readiness, governance), validated across 43 repositories | Author states predictive validation is still future work — cited as supporting the *approach*, not as validation of any specific scoring formula |
+| **Crypto Asset Passport / migration governance** | Näther, Herzinger, Gazdag, Steghöfer, Daum & Loebenberger — crypto-migration process review | Proposes a four-phase migration process (Diagnosis, Plan, Execution, Maintenance) and finds that "cryptographic inventory" is often left ill-defined in practice — directly motivating a structured asset passport | Only 10 of the 21 papers it reviews describe real-world migrations |
+| **Dependency blast-radius modeling** | Loebenberger, Hirsch, Gazdag, Herzinger & Näther — formal migration modeling | Models migration as a dependency graph with "migration clusters" that must move together, which blocks naive parallel migration | Only the abstract/summary were reviewed for this audit |
+| **Centralized governance model** | Cho, Lee, Kim, Lee & Cho (Samsung SDS) | Argues for centralized cryptographic governance with automated, zero-trust-aligned policy enforcement | Preprint |
+
+### ⚠️ What this evidence base does *not* cover
+
+The recovery-frontier methodology — positive/negative controls, leakage canaries, the Merkle-sealed evidence ledger, and honeytoken tripwires — is GHOSTRAVEN's own novel contribution. No single external paper validates that combination end to end. Related, independently relevant work worth knowing about:
+
+- Mosca's quantum-risk timing inequality (the "how much longer must this stay secret vs. how soon will quantum arrive" framing)
+- Certificate Transparency (RFC 9162) and Sigstore/Rekor, as precedent for tamper-evident, publicly verifiable logs
+- TU Darmstadt's lattice-reduction challenge benchmarks, as a model for reduced-parameter difficulty ladders
+- Classical honeytoken/honeypot literature, underlying the decoy-archive design
+
+---
+
+## ❓ Anticipated Questions (For Judges)
+
+Since the team is not presenting live, this section anticipates the questions a technical judge is most likely to ask.
+
+**Q: Does GHOSTRAVEN actually break real encryption like AES-256 or RSA?**
+No. Every recovery attempt runs against synthetic, lab-generated secrets at reduced difficulty (the 28-to-62-bit challenge ladder). GHOSTRAVEN never attacks real production algorithms, keys, or data.
+
+**Q: If the secret is destroyed before the attack, how do you know whether the attacker actually succeeded?**
+Through the witness mechanism — see the locksmith analogy above. The secret is used once to derive a one-way "witness" (via HKDF-SHA-256), then destroyed. The attacker's guess is checked against the witness, not against the original secret. A correct guess makes the witness "unlock"; an incorrect one doesn't. This also guarantees fairness: since the original secret no longer exists anywhere, the attacker cannot cheat by reading memory or stealing an answer file.
+
+**Q: Isn't a 28–62 bit challenge trivially different from real-world 128/256-bit security?**
+Yes, deliberately so. The ladder exists to produce a *reproducible frontier* within a practical time/compute budget for a hackathon-scale demo, not to claim anything about AES-256 or RSA-2048 directly. The architecture (witness derivation, commit-then-clear, controls, signed evidence) is designed to scale to realistic parameter sizes in a production deployment; the demo ladder is sized for observability within limited time and hardware.
+
+**Q: What stops someone from faking a result or editing a report after the fact?**
+Every run is hash-chained, sealed into a Merkle tree, and digitally signed. Any post-hoc edit to a report breaks the hash chain or invalidates the signature, which `ghostraven evidence verify` would catch immediately.
+
+**Q: Why include an AI analyst if it isn't trusted for the final verdict?**
+Because reading raw cryptographic evidence is slow for humans. The AI analyst explains anomalies and recommends next steps in plain language, but the actual validity label (`Verified / Inconclusive / Contaminated / Invalid`) is always decided by deterministic cryptographic checks — the AI has no authority over that outcome.
+
+**Q: How is this different from a PQC-readiness scanner that's already on the market?**
+A scanner flags "this algorithm is outdated" as a static fact. GHOSTRAVEN adds the missing dimension — urgency — by combining the Crypto Asset Passport (secrecy lifetime, criticality, dependency blast radius) with a measured recovery frontier, then produces signed evidence and an accountable migration ticket, not just a spreadsheet of findings. See [What Makes This Different](#-what-makes-this-different) for a direct comparison.
+
+**Q: What happens to a legacy system that genuinely can't be migrated to PQC right now?**
+It's wrapped in a Cryptographic Exoskeleton: a gateway that restricts it to approved routes, blocks direct exposure, detects bypass/downgrade attempts, and opens hybrid/PQC tunnels for external traffic. This isn't presented as a permanent fix — the Residual-Risk Ledger tracks what risk remains, and the migration ticket carries a hard deadline and retirement clock.
+
+**Q: Is any of this based on real research, or is it invented for the hackathon?**
+It's grounded in published work on crypto-migration processes, PQC gateway deployments at scale, and multi-factor readiness scoring (see [Evidence Base & Research Grounding](#-evidence-base--research-grounding)). We've been explicit about which parts of GHOSTRAVEN — specifically the recovery-frontier-with-controls methodology and the honeytoken/Merkle evidence design — are our own novel contribution rather than directly validated by a cited source.
+
+**Q: What's the current state of the project — is this fully built or a prototype?**
+Alpha. The synthetic recovery lab, evidence chain, and passport scoring are implemented; the dashboard and Exoskeleton gateway are in active development. See [Maturity & Benchmarks](#-maturity--benchmarks) for current status.
+
+---
+
+## 👥 Team
 
 **Team KARMIN** · ASYNC 2026 · Cybersecurity & Defense Track
 
-| Role | Name / USN |
-|---|---|
-| Team Lead | Abhinava N. (1MS25IM003) |
-| Members |· (Achal S) 1MS25AS002 · (Sannidhi R Devadiga) 1MS25IS106 · (Uttham G )1MS25IS133 |
+| Role | Name | USN |
+|---|---|---|
+| Team Lead | Abhinava N. | 1MS25IM003 |
+| Member | Achal S | 1MS25AS002 |
+| Member | Sannidhi R Devadiga | 1MS25IS106 |
+| Member | Uttham G | 1MS25IS133 |
 
 ---
 
 <div align="center">
 
-###  GHOSTRAVEN
+### 👻 GHOSTRAVEN
 
 **Evidence-guided prioritization for post-quantum migration.**
 
-[![Live Demo](https://img.shields.io/badge/🔗_Try_the_Demo-charming--gaufre--637b90.netlify.app-black?style=for-the-badge)](https://charming-gaufre-637b90.netlify.app)
+[![Live Demo](https://img.shields.io/badge/🔗_Try_the_Demo-taupe--cat--0c2dbd.netlify.app-black?style=for-the-badge)](https://taupe-cat-0c2dbd.netlify.app/)
 
 *Built for ASYNC 2026.*
 
