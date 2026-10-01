@@ -417,8 +417,8 @@ This project is released under the **`<choose a license — e.g. MIT / Apache-2.
 
 | Role | Name / USN |
 |---|---|
-| Team Lead | Abhinava N. |
-| Members | 1MS25IM003 · 1MS25AS002 · 1MS25IS106 · 1MS25IS133 |
+| Team Lead | Abhinava N. (1MS25IM003) |
+| Members |· (Achal S) 1MS25AS002 · (Sannidhi R Devadiga) 1MS25IS106 · (Uttham G )1MS25IS133 |
 
 ---
 
