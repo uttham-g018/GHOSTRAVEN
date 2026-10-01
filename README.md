@@ -4,20 +4,21 @@
 
 ### Evidence-Guided Post-Quantum Migration Intelligence
 
-**Stop guessing which systems need quantum-safe crypto first. Measure it.**
+**You can't protect what you haven't measured. GHOSTRAVEN measures it.**
 
 [![Async 2026](https://img.shields.io/badge/ASYNC-2026-black?style=for-the-badge)](https://charming-gaufre-637b90.netlify.app)
 [![Track](https://img.shields.io/badge/Track-Cybersecurity%20%26%20Defense-red?style=for-the-badge)](#)
 [![Status](https://img.shields.io/badge/Status-Alpha-orange?style=for-the-badge)](#-maturity--benchmarks)
-[![License](https://img.shields.io/badge/License-TBD-lightgrey?style=for-the-badge)](#-license)
+[![License](https://img.shields.io/badge/License-TBD-lightgrey?style=for-the-badge)](#-governance--license)
 
 [![Build](https://img.shields.io/badge/build-passing-brightgreen?style=flat-square)](#)
 [![Coverage](https://img.shields.io/badge/coverage-pending-yellow?style=flat-square)](#)
 [![Code Quality](https://img.shields.io/badge/code%20quality-A-brightgreen?style=flat-square)](#)
 [![Python](https://img.shields.io/badge/Python-3.11+-blue?style=flat-square&logo=python)](#)
-[![PQC](https://img.shields.io/badge/Crypto-Hybrid%20PQC-9cf?style=flat-square)](#)
+[![Crypto](https://img.shields.io/badge/Witness-HKDF--SHA--256-9cf?style=flat-square)](#)
+[![Evidence](https://img.shields.io/badge/Audit-Hash%20Chain%20%2B%20Merkle-purple?style=flat-square)](#)
 
-**[🚀 Live Demo](https://charming-gaufre-637b90.netlify.app) · [📐 Architecture](#-architecture--system-design) · [⚡ Quick Start](#-installation--configuration) · [🛡️ Security](#-security-reporting)**
+**[🚀 Live Demo](https://charming-gaufre-637b90.netlify.app) · [📐 Architecture](#2️⃣-architecture--system-design) · [⚡ Quick Start](#3️⃣-installation--configuration) · [🧠 Why We Win](#-why-this-should-win) · [🛡️ Security](#-security-reporting)**
 
 <br/>
 
@@ -30,22 +31,24 @@
 <br/>
 
 > ```diff
-> + Harvest Now, Decrypt Later is already happening.
-> - "Quantum is 10-20 years away" is not a migration plan.
-> + GHOSTRAVEN turns belief into signed, reproducible evidence.
+> + Harvest Now, Decrypt Later is already happening — today, right now.
+> - "Quantum is 10-20 years away" is not a migration plan. It's a guess.
+> + GHOSTRAVEN replaces that guess with signed, reproducible, court-grade evidence.
 > ```
 
 ---
 
 ## 📑 Table of Contents
 
-1. [Context & Overview](#-context--overview)
-2. [Architecture & System Design](#-architecture--system-design)
-3. [Installation & Configuration](#-installation--configuration)
-4. [Developer Experience & Quality Control](#-developer-experience--quality-control)
-5. [Reliability, Performance & Security](#-reliability-performance--security)
-6. [Governance & License](#-governance--license)
-7. [Team](#-team)
+1. [Context & Overview](#1️⃣-context--overview)
+2. [Architecture & System Design](#2️⃣-architecture--system-design)
+3. [Installation & Configuration](#3️⃣-installation--configuration)
+4. [Developer Experience & Quality Control](#4️⃣-developer-experience--quality-control)
+5. [Reliability, Performance & Security](#5️⃣-reliability-performance--security)
+6. [Governance & License](#6️⃣-governance--license)
+7. [Why This Should Win](#-why-this-should-win)
+8. [Judge FAQ](#-judge-faq)
+9. [Team](#-team)
 
 ---
 
@@ -53,11 +56,13 @@
 
 ### 🎯 Elevator Pitch
 
-**GHOSTRAVEN is an evidence-guided post-quantum security platform that tells organizations *which systems must migrate first* to quantum-safe cryptography — and proves it with signed, reproducible evidence instead of vendor claims.**
+**GHOSTRAVEN is an evidence-guided post-quantum security platform that tells organizations exactly *which systems must migrate first* to quantum-safe cryptography — and proves the recommendation with signed, reproducible, tamper-evident evidence instead of vendor marketing or guesswork.**
 
-It targets **long-lived, high-value systems**: aerospace, defense, satellite operations, healthcare, banking, telecom, and critical infrastructure — anywhere data must stay secret for years.
+It is built for the systems where getting this wrong is catastrophic and irreversible: **aerospace, defense, satellite operations, healthcare, banking, telecom, and critical infrastructure** — anywhere data must stay confidential for years or decades.
 
-### 🧩 The Problem: Harvest Now, Decrypt Later (HNDL)
+### 🧩 The Problem We Solve
+
+**Harvest Now, Decrypt Later (HNDL):** adversaries steal encrypted data *today*, store it, and simply wait — for cheaper compute, a leaked key, or a cryptographically relevant quantum computer — to decrypt it *later*.
 
 ```
 ┌─────────────┐    ┌─────────────┐    ┌──────────────────────┐    ┌─────────────────┐
@@ -67,27 +72,35 @@ It targets **long-lived, high-value systems**: aerospace, defense, satellite ope
 └─────────────┘    └─────────────┘    └──────────────────────┘    └─────────────────┘
 ```
 
-Attackers steal encrypted data **today** and simply wait for cheaper compute, a leaked key, or a quantum breakthrough. Nobody has had a controlled, evidence-based way to measure **how close that "later" already is** — until now.
+Every security leader already knows HNDL is real. **What nobody has had is a defensible, evidence-based way to answer the only question that actually matters:**
 
-### ⚠️ What GHOSTRAVEN *never* does
+> *"Of everything we hold, what has to migrate first — and how do we prove that priority list to an auditor, a board, or a regulator?"*
 
-> 🔒 **Hard boundary:** GHOSTRAVEN does **not** attack real customer files, production databases, private keys, passwords, AES-256, RSA, ECC, or any PQC algorithm. Every experiment runs against synthetic, harmless, lab-generated assets.
+That's the gap GHOSTRAVEN closes.
 
-### 🌟 Core Features
+### ⚠️ What GHOSTRAVEN Never Does
 
-| Capability | What it does |
-|---|---|
-| 🪪 **Crypto Asset Passport** | Per-asset profile: algorithm, protocol, data sensitivity, secrecy lifetime, criticality, owner, dependencies, exposure, upgrade difficulty, PQC readiness |
-| 📊 **Urgency Scoring Engine** | Ranks assets by quantum exposure, long-term confidentiality need, mission impact, dependency blast radius, and migration difficulty |
-| 🧪 **Synthetic Recovery Lab** | Generates harmless synthetic files, databases, telemetry, and challenge secrets that mimic real system shape with zero real data |
-| 🎯 **Observed Recovery Frontier** | Runs a fixed attacker profile (hardware, time, memory, energy, method) against the synthetic ladder to produce a signed capability measurement |
-| ✅ **Evidence Validation** | Positive controls, negative controls, leakage canaries, config checks, and budget limits — every run labeled `Verified`, `Inconclusive`, `Contaminated`, or `Invalid` |
-| ⛓️ **Tamper-Evident Chain** | Hash chains, Merkle roots, config hashes, digital signatures, and signed receipts make hidden report modification detectable |
-| 🤖 **AI Analyst (advisory only)** | Explains anomalies, missing evidence, and migration options — **deterministic cryptographic checks, not AI, decide validity** |
-| 🍯 **Decoy Archives & Honeytokens** | Harmless fake assets that silently alert security when an intruder maps systems, probes synthetic archives, or attempts data exfiltration |
-| 🛡️ **Cryptographic Exoskeleton** | A modern gateway wrapped around legacy systems that can't yet adopt PQC directly — restricts routes, blocks direct exposure, flags bypass/downgrade attempts, opens hybrid/PQC tunnels |
-| 📒 **Residual-Risk Ledger** | Tracks remaining endpoint, local-network, and gateway risk after the Exoskeleton is deployed |
-| 🎫 **Evidence-Linked Migration Tickets** | Owner, recommended action, protection status, retest schedule, full-upgrade deadline, and retirement clock — so the Exoskeleton stays a bridge, never a forgotten workaround |
+> 🔒 **Hard boundary, by design:** GHOSTRAVEN never attacks real customer files, production databases, private keys, passwords, AES-256, RSA, ECC, or any PQC algorithm. Every experiment runs against **synthetic, harmless, lab-generated assets** that mimic the operational shape of a real system without containing any real data. This isn't a limitation — it's what makes the evidence usable in an audit instead of a liability.
+
+### 🌟 Core Capabilities
+
+| Capability | What it does | Why it matters |
+|---|---|---|
+| 🪪 **Crypto Asset Passport** | Per-asset profile: algorithm, protocol, data sensitivity, secrecy lifetime, criticality, owner, dependencies, exposure, upgrade difficulty, PQC readiness | Turns "we have a lot of old crypto somewhere" into a structured, queryable inventory |
+| 📊 **Urgency Scoring Engine** | Ranks assets by quantum exposure, long-term confidentiality need, mission impact, dependency blast radius, and migration difficulty | Converts the inventory into a prioritized, defensible migration order — not a flat checklist |
+| 🧪 **Synthetic Recovery Lab** | Generates harmless synthetic files, databases, telemetry, and challenge secrets that mirror real system shape with zero real data | Lets you *measure* attacker capability safely, instead of theorizing about it |
+| 🎯 **Observed Recovery Frontier** | Runs a fixed, disclosed attacker profile (hardware, time, memory, energy, method) against the synthetic ladder | Produces a signed, specific claim: *this* attacker, with *this* budget, got *this* far — nothing vaguer |
+| ✅ **Evidence Validation** | Positive controls, negative controls, leakage canaries, config checks, budget limits — every run labeled `Verified`, `Inconclusive`, `Contaminated`, or `Invalid` | No result ships without proof the experiment itself was sound |
+| ⛓️ **Tamper-Evident Chain** | Hash chains, Merkle roots, config hashes, digital signatures, signed receipts | Makes silent report modification *mathematically detectable*, not just policy-forbidden |
+| 🤖 **AI Analyst (advisory only)** | Explains anomalies, missing evidence, and migration options in plain language | Speeds up human review — but **never** decides what's true |
+| 🍯 **Decoy Archives & Honeytokens** | Harmless fake assets that silently alert security when an intruder maps systems, probes synthetic archives, or attempts exfiltration | Free, passive early-warning layer with zero risk to real data |
+| 🛡️ **Cryptographic Exoskeleton** | A modern gateway wrapped around legacy systems that can't yet adopt PQC directly: restricts routes, blocks direct exposure, flags bypass/downgrade attempts, opens hybrid/PQC tunnels | Protects what you can't replace overnight — without pretending it's been fixed |
+| 📒 **Residual-Risk Ledger** | Tracks remaining endpoint, local-network, and gateway risk after the Exoskeleton is deployed | Keeps the "temporary fix" honest about what risk is still outstanding |
+| 🎫 **Evidence-Linked Migration Tickets** | Owner, recommended action, protection status, retest schedule, full-upgrade deadline, retirement clock | Guarantees the Exoskeleton is a *bridge*, with an expiry date — never a forgotten workaround |
+
+### 🧠 The One-Sentence Difference
+
+> Other tools tell you **encryption exists**. GHOSTRAVEN tells you, with signed proof, **how much that encryption is actually worth, against whom, for how long — and what to fix first.**
 
 ### 🎥 Demo
 
@@ -95,7 +108,7 @@ Attackers steal encrypted data **today** and simply wait for cheaper compute, a 
 
 <div align="center">
 <img src="images/frontier.png" alt="GHOSTRAVEN Observed Recovery Frontier" width="880"/>
-<br/><sub>Observed Recovery Frontier across the synthetic challenge ladder</sub>
+<br/><sub>Observed Recovery Frontier across the synthetic challenge ladder — the attacker opens easy rungs, stalls on hard ones</sub>
 </div>
 
 ---
@@ -106,7 +119,7 @@ Attackers steal encrypted data **today** and simply wait for cheaper compute, a 
 
 <div align="center">
 <img src="images/architecture.png" alt="GHOSTRAVEN system architecture" width="880"/>
-<br/><sub>GHOSTRAVEN system architecture</sub>
+<br/><sub>GHOSTRAVEN system architecture — intake, scoring, lab, evidence, defense, and action layers</sub>
 </div>
 
 ### 🔗 Component Map
@@ -192,7 +205,18 @@ flowchart LR
     Ledger --> Ticket[🎫 Migration Ticket<br/>retest + deadline + retirement clock]
 ```
 
-> Like placing a modern security gate around an old house with a weak door: the old system isn't magically repaired, but attackers must pass through a monitored, hybrid/PQC-protected boundary.
+> **Analogy:** it's like placing a modern, monitored security gate around an old house with a weak door. The old door isn't magically repaired — but every outside attacker must now pass through a hardened, hybrid/PQC-protected checkpoint first, and every attempt to bypass it is logged.
+
+### 🪜 The Challenge Ladder (Synthetic Recovery Lab)
+
+| Rung | Difficulty | What it demonstrates |
+|---|---|---|
+| **R1** | ~28-bit | Baseline — confirms the lab, controls, and pipeline work end to end |
+| **R2** | Harder | Shows meaningful attacker capability under the fixed budget |
+| **R3** | Harder still | Shows where the budget starts to strain |
+| **R4** | ~62-bit | The frontier — where the fixed attacker profile stalls out |
+
+The **highest rung actually recovered**, under full controls, is the signed **Observed Recovery Frontier** — a specific, falsifiable, reproducible claim, not a marketing adjective.
 
 ### 📚 Documentation Links
 
@@ -213,7 +237,7 @@ flowchart LR
 |---|---|
 | Python | `>= 3.11` |
 | Node.js *(if dashboard/API gateway uses it)* | `>= 20.x` |
-| GPU | CUDA-capable GPU recommended for recovery workers *(CPU fallback supported for small ladder rungs)* |
+| GPU | CUDA-capable GPU recommended for recovery workers *(CPU fallback supported for low ladder rungs)* |
 | Memory | `>= 8 GB RAM` recommended |
 | OS | Linux / macOS / WSL2 |
 
@@ -319,6 +343,15 @@ ghostraven exoskeleton deploy \
   --retest-days 90
 ```
 
+**Query the prioritized migration list:**
+
+```bash
+ghostraven passport rank --top 10
+# 1. satcom-link-07     | urgency: 94/100 | RSA-2048 | 15yr secrecy
+# 2. legacy-payroll-db  | urgency: 88/100 | 3DES     | 10yr secrecy
+# ...
+```
+
 ### 🧪 Testing & QA Commands
 
 ```bash
@@ -344,13 +377,13 @@ python scripts/validate_ledger.py --sample
 
 ## 5️⃣ Reliability, Performance & Security
 
-### 📈 Benchmarks & Maturity
+### 📈 Maturity & Benchmarks
 
 | Status | Meaning |
 |---|---|
-| 🟠 **Alpha** | Current state — core lab, evidence chain, and passport scoring implemented; dashboard and Exoskeleton gateway in active development |
+| 🟠 **Alpha** | Core lab, evidence chain, and passport scoring implemented; dashboard and Exoskeleton gateway in active development |
 
-| Metric | Current (illustrative — replace with real numbers) |
+| Metric | Current (illustrative — replace with real measured numbers) |
 |---|---|
 | Ladder rungs correctly detected | `4 / 4` |
 | False leakage-canary hits | `0` |
@@ -368,7 +401,7 @@ python scripts/validate_ledger.py --sample
 | AI Analyst gives inconsistent explanations | Model is advisory-only and non-deterministic by design | Trust only the deterministic `Verified / Inconclusive / Contaminated / Invalid` label, never the AI narrative, for compliance decisions |
 | Ledger write fails under concurrent runs | No current support for concurrent writers to one Merkle store | Run one lab instance per `MERKLE_STORE_PATH`, or shard by asset ID |
 
-**Known limitation:** GHOSTRAVEN measures a *declared laboratory attacker's* recovery capability under fixed, disclosed resources — it does **not** measure a real-world adversary's hidden compute power. Treat results as a calibrated proxy, not a universal guarantee.
+**Known limitation (stated plainly, not hidden):** GHOSTRAVEN measures a *declared laboratory attacker's* recovery capability under fixed, disclosed resources — it does **not** measure a real-world adversary's hidden compute power. Treat every Observed Recovery Frontier as a calibrated proxy for prioritization, not a universal guarantee that a real system is unbreakable.
 
 ### 🔐 Security Reporting
 
@@ -399,6 +432,59 @@ This project is released under the **`<choose a license — e.g. MIT / Apache-2.
 - **Python:** `black` formatting, `flake8` linting, type hints checked with `mypy`
 - **Commits:** Conventional Commits style preferred (`feat:`, `fix:`, `docs:`...)
 - **No real data, ever:** any PR touching the Synthetic Recovery Lab must use generated/synthetic assets only — never real credentials, keys, or production data
+
+---
+
+## 🏆 Why This Should Win
+
+| Judging lens | How GHOSTRAVEN answers it |
+|---|---|
+| **Novelty** | Most PQC tools stop at "scan for weak algorithms." GHOSTRAVEN goes further: it *measures* recoverability under a disclosed attacker budget and turns that into a signed, auditable artifact — a category that barely exists today. |
+| **Technical depth** | Session-bound witnesses (HKDF-SHA-256), commit-then-clear evidence flow, split-control (generate/seal/attack/verify kept separate), hash-chain + Merkle-sealed audit trail, and a deterministic (non-AI) validity gate. |
+| **Real-world relevance** | HNDL is an active, documented concern across defense, finance, and healthcare today — not a hypothetical future problem. |
+| **Responsible design** | Zero real data touched, zero real algorithms attacked, by architecture — not by policy promise. The system is safe to run against production-adjacent environments precisely because it never operates on real secrets. |
+| **Completeness of the idea** | It doesn't stop at "here's your risk score." It closes the loop: Passport → Score → Measure → Evidence → Protect (Exoskeleton) → Track (Residual-Risk Ledger) → Ticket with a retirement clock. |
+| **Honesty about limits** | We explicitly document what GHOSTRAVEN does *not* measure (a real adversary's hidden capability) instead of overselling the result — which is itself part of the evidentiary rigor we're pitching. |
+
+---
+
+## ❓ Judge FAQ
+
+<details>
+<summary><b>Does GHOSTRAVEN actually break real encryption?</b></summary>
+<br/>
+No — by design. Every recovery attempt runs against synthetic, lab-generated secrets that mimic a real asset's shape. GHOSTRAVEN never attacks real AES-256, RSA, ECC, or PQC algorithms, and never touches real customer data.
+</details>
+
+<details>
+<summary><b>So what does the "Observed Recovery Frontier" actually prove?</b></summary>
+<br/>
+It proves what a specific, disclosed attacker profile (fixed hardware, time, energy, and method) could recover within a fixed budget, against a synthetic challenge of known difficulty. It's a calibrated, reproducible proxy for prioritization — not a claim about any real adversary's hidden capability.
+</details>
+
+<details>
+<summary><b>Why not just use a standard PQC-readiness scanner?</b></summary>
+<br/>
+Scanners tell you an algorithm is "weak" in the abstract. GHOSTRAVEN adds the missing dimension: urgency. By combining the Crypto Asset Passport (secrecy lifetime, criticality, dependency blast radius) with a measured recovery frontier, it answers "weak compared to what, and how soon does it matter" — the actual question a migration budget needs answered.
+</details>
+
+<details>
+<summary><b>What happens to a legacy system that can't adopt PQC right away?</b></summary>
+<br/>
+It gets wrapped in a Cryptographic Exoskeleton: a modern gateway that restricts it to approved routes, blocks direct exposure, detects bypass/downgrade attempts, and opens hybrid/PQC tunnels for external traffic. Remaining risk is tracked in the Residual-Risk Ledger, and an evidence-linked migration ticket keeps a hard deadline and retirement clock so the Exoskeleton never becomes a permanent excuse.
+</details>
+
+<details>
+<summary><b>Why have an AI analyst at all if it's not trusted for validity?</b></summary>
+<br/>
+Because the hard part of security tooling isn't just generating evidence — it's getting a human to read and act on it quickly. The AI analyst explains anomalies, missing evidence, and migration trade-offs in plain language. But the labels that actually matter (`Verified`, `Inconclusive`, `Contaminated`, `Invalid`) are decided entirely by deterministic cryptographic checks, never by the model.
+</details>
+
+<details>
+<summary><b>How do we know the evidence hasn't been tampered with?</b></summary>
+<br/>
+Every step — plant, seal, attack, verify — is hash-chained and sealed into a Merkle tree, then digitally signed. Any after-the-fact edit to a report breaks the hash chain or the signature, making tampering mathematically detectable rather than just policy-forbidden.
+</details>
 
 ---
 
