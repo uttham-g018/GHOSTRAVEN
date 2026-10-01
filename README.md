@@ -184,6 +184,7 @@ sequenceDiagram
 <img src="images/analogy.png" alt="The locksmith analogy for witness derivation" width="880"/>
 <br/><sub>The locksmith analogy: destroying the key, keeping the padlock as proof</sub>
 </div>
+<br/><br/>
 
 
 The hardest part of the design to explain is how we can prove an attacker recovered a secret without ever keeping the secret around to check against. Here's the plain-language version:
